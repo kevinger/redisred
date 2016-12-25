@@ -5,7 +5,7 @@ var port = process.env.PORT || 3000;
 var redisUrl = process.env.REDIS_URL || 'redis://127.0.0.1:6379/0';
 var sessionSecret = process.env.SESSION_SECRET || 'this is really secure';
 var adminUsername = process.env.ADMIN_USERNAME || 'admin';
-var adminPassword = process.env.ADMIN_PASSWORD || '123456';
+var adminPassword = process.env.ADMIN_PASSWORD || 'admin';
 var rootRedirect = process.env.ROOT_REDIRECT || 'https://google.com';
 var apiToken = process.env.API_TOKEN || '1234567890abcdefghijklmnopqrstuvwxyz';
 
@@ -58,4 +58,3 @@ redis.ping(function(err){
     app.listen(port);
   }
 });
-
